@@ -1,0 +1,10 @@
+name = "trace"
+main = "src/index.js"
+compatibility_date = "2025-03-07"
+
+[[durable_objects.bindings]]
+name = "MATCHES"
+class_name = "Match"
+
+[durable_objects]
+alarms = true

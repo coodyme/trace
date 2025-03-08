@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Race</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div id="lobby">
+    <input id="match-id" placeholder="Enter Match ID">
+    <button onclick="joinMatch()">Join Match</button>
+    <button onclick="createMatch()">Create Match</button>
+  </div>
+  <div id="race" style="display: none;">
+    <p id="text-prompt"></p>
+    <input id="text-input" type="text" oninput="updateProgress()">
+    <div id="progress-bars"></div>
+  </div>
+  <div id="results" style="display: none;">
+    <h2>Results</h2>
+    <p id="winner"></p>
+    <button onclick="restart()">Play Again</button>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
